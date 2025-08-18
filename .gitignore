@@ -1,0 +1,46 @@
+# APK files (too large for GitHub)
+*.apk
+*.apks
+*.aab
+
+# Large files
+*.zip
+*.tar.gz
+*.rar
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# Analysis artifacts
+evidence/
+logs/
+captures/
+*.pcap
+*.mitm
