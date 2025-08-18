@@ -6,6 +6,39 @@ Comprehensive security and privacy analysis of the MAX messenger application (ru
 
 This repository contains the complete analysis framework and results for investigating the privacy and security implications of the MAX messenger application. The analysis includes both static code review and dynamic runtime monitoring.
 
+## About
+
+This project was created to address widespread concerns about the MAX messenger application's privacy and security practices. Following claims circulating on the internet about alleged "total surveillance" capabilities, this analysis provides a comprehensive, evidence-based assessment of the application's actual behavior and data collection practices.
+
+### Analysis Scope
+
+The investigation covers:
+- **Static Analysis**: APK decompilation, permission analysis, code review
+- **Dynamic Analysis**: Runtime monitoring, network traffic analysis, permission usage
+- **Privacy Assessment**: Data collection verification, third-party integration analysis
+- **Security Evaluation**: Vulnerability assessment, risk analysis
+
+### Methodology
+
+The analysis follows standard security research practices:
+1. **APK Decompilation**: Using apktool and jadx for source code extraction
+2. **Permission Analysis**: Review of declared permissions and their usage
+3. **Dynamic Monitoring**: Real-time observation of application behavior
+4. **Network Analysis**: Traffic capture and endpoint identification
+5. **Code Review**: Systematic examination of decompiled source code
+
+### Key Objectives
+
+- Verify or disprove claims about surveillance capabilities
+- Identify actual data collection and transmission practices
+- Assess privacy risks and security implications
+- Provide transparent, reproducible analysis methodology
+- Enable independent verification by other researchers
+
+### Findings Summary
+
+The analysis reveals that while MAX messenger does collect some telemetry data through AppTracer SDK, the claims of "total surveillance" are **not supported by evidence**. The application has standard messenger functionality with typical analytics integration, but does not implement the alleged comprehensive monitoring capabilities.
+
 ## Project Structure
 
 ```
