@@ -174,6 +174,174 @@ Each report includes:
 - Recommendations
 - Evidence and code citations
 
+## Research Logs and Results
+
+### Analysis Timeline
+
+**Phase 1: Initial Setup and Static Analysis**
+- APK decompilation using apktool and jadx
+- Permission manifest analysis
+- Code structure examination
+- External dependency identification
+
+**Phase 2: Dynamic Analysis**
+- Real-time application monitoring
+- Network traffic capture and analysis
+- Permission usage tracking via AppOps
+- Logcat monitoring for security events
+
+**Phase 3: Privacy Assessment**
+- Data collection capability analysis
+- Third-party integration review
+- Network transmission monitoring
+- User data handling verification
+
+**Phase 4: Claims Verification**
+- Internet claims fact-checking
+- Evidence-based assessment
+- Comparative analysis with findings
+- Risk evaluation and recommendations
+
+### Key Research Findings
+
+#### 1. AppTracer SDK Integration
+**Status:** CONFIRMED
+- Found active integration with AppTracer SDK
+- Endpoints: `https://sdk-api.apptracer.ru`
+- Functions: `initUpload`, `upload`, `crash/trackSession`, `perf/upload`
+- Purpose: Performance telemetry and crash reporting
+
+#### 2. Contacts Access Capability
+**Status:** CODE PRESENT, PERMISSIONS REVOKED
+- ContactsContract API usage found in code
+- Permissions: READ_CONTACTS, WRITE_CONTACTS, GET_ACCOUNTS
+- Current status: All permissions revoked (ignore mode)
+- Risk: Potential access if permissions restored
+
+#### 3. Screen Recording Claims
+**Status:** DISPROVEN
+- No MediaProjection API usage found
+- No SYSTEM_ALERT_WINDOW overlay implementation
+- No background screen recording code
+- Conclusion: Claims not supported by evidence
+
+#### 4. Audio Recording Claims
+**Status:** DISPROVEN
+- Camera and microphone permissions: foreground only
+- No background audio recording implementation
+- Standard messenger functionality only
+- Conclusion: Claims not supported by evidence
+
+#### 5. Application Monitoring Claims
+**Status:** DISPROVEN
+- No QUERY_ALL_PACKAGES permission
+- No UsageStatsManager implementation
+- No PackageManager.getInstalledPackages() usage
+- Conclusion: Claims not supported by evidence
+
+#### 6. Text Interception Claims
+**Status:** DISPROVEN
+- No TextWatcher implementation for input monitoring
+- No ClipboardManager access
+- No unsent text capture mechanisms
+- Conclusion: Claims not supported by evidence
+
+### Network Analysis Results
+
+#### External Servers Identified
+1. **AppTracer Analytics**: `sdk-api.apptracer.ru`
+2. **Firebase Services**: `firebase.google.com`
+3. **Google Play Services**: `play.google.com`
+4. **Messenger Infrastructure**: Various OK.ru endpoints
+
+#### Traffic Patterns
+- Regular telemetry uploads to AppTracer
+- Standard Firebase analytics integration
+- Normal messenger communication patterns
+- No suspicious data exfiltration detected
+
+### Permission Analysis Results
+
+#### Granted Permissions
+- `CAMERA`: foreground only
+- `RECORD_AUDIO`: foreground only
+- `INTERNET`: standard network access
+- `ACCESS_NETWORK_STATE`: network monitoring
+
+#### Revoked Permissions
+- `READ_CONTACTS`: revoked (ignore mode)
+- `WRITE_CONTACTS`: revoked (ignore mode)
+- `GET_ACCOUNTS`: revoked (ignore mode)
+- `SYSTEM_ALERT_WINDOW`: revoked (ignore mode)
+
+### Code Obfuscation Analysis
+
+#### Obfuscation Techniques
+- Class and method renaming (a, b, c...)
+- Debug information removal
+- String encryption
+- Control flow obfuscation
+
+#### Impact Assessment
+- Standard Android app protection
+- Does not indicate malicious intent
+- Common practice for commercial applications
+- Analysis still possible with proper tools
+
+### Risk Assessment Summary
+
+#### Low Risk
+- Standard messenger functionality
+- Basic telemetry collection
+- Code obfuscation (normal practice)
+
+#### Medium Risk
+- AppTracer SDK integration
+- Potential contacts access (if permissions restored)
+- Network data transmission
+
+#### High Risk
+- None identified in current analysis
+
+### Evidence and Code Citations
+
+#### AppTracer Integration Evidence
+```java
+// SampleUploadWorker.java
+Uri.parse("https://sdk-api.apptracer.ru").buildUpon()
+    .appendEncodedPath("api/sample/initUpload")
+
+Uri.parse("https://sdk-api.apptracer.ru").buildUpon()
+    .appendEncodedPath("api/sample/upload")
+```
+
+#### Contacts Access Evidence
+```java
+// ike.java
+public final Uri c() { 
+    return ContactsContract.RawContacts.CONTENT_URI.buildUpon()...
+}
+
+// jva.java
+this.a.getContentResolver().registerContentObserver(
+    ContactsContract.Contacts.CONTENT_URI, true, new f04(...))
+```
+
+### Research Conclusions
+
+1. **Claims Verification**: Internet claims about "total surveillance" are **NOT SUPPORTED** by evidence
+2. **Actual Capabilities**: Standard messenger with AppTracer telemetry integration
+3. **Privacy Risks**: Moderate, primarily related to potential contacts access
+4. **Security Status**: No critical vulnerabilities identified
+5. **Recommendations**: Maintain revoked permissions, monitor network activity
+
+### Research Methodology Validation
+
+- **Reproducibility**: All analysis steps documented and repeatable
+- **Transparency**: Full methodology and evidence provided
+- **Objectivity**: Evidence-based conclusions without bias
+- **Completeness**: Comprehensive coverage of claimed capabilities
+
 ## Methodology
 
 ### Static Analysis
