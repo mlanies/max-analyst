@@ -1,0 +1,53 @@
+package defpackage;
+
+/* loaded from: classes2.dex */
+public abstract class hwb {
+    public static int oneme_login_conductor = 2131363551;
+    public static int oneme_login_confirm_description = 2131363552;
+    public static int oneme_login_confirm_resend_code = 2131363553;
+    public static int oneme_login_confirm_sms_input = 2131363554;
+    public static int oneme_login_confirm_timer = 2131363555;
+    public static int oneme_login_confirm_title = 2131363556;
+    public static int oneme_login_input_constraint_layout = 2131363558;
+    public static int oneme_login_input_continue_button = 2131363559;
+    public static int oneme_login_input_description = 2131363560;
+    public static int oneme_login_input_gradient_bg = 2131363563;
+    public static int oneme_login_input_help_button = 2131363564;
+    public static int oneme_login_input_logo = 2131363565;
+    public static int oneme_login_input_name = 2131363566;
+    public static int oneme_login_input_name_btn_container = 2131363567;
+    public static int oneme_login_input_name_confirmation_cancel = 2131363568;
+    public static int oneme_login_input_name_confirmation_return = 2131363569;
+    public static int oneme_login_input_name_continue_btn = 2131363570;
+    public static int oneme_login_input_name_description = 2131363571;
+    public static int oneme_login_input_name_title = 2131363572;
+    public static int oneme_login_input_name_toolbar = 2131363573;
+    public static int oneme_login_input_phone_number_input = 2131363574;
+    public static int oneme_login_input_surname = 2131363575;
+    public static int oneme_login_input_title = 2131363576;
+    public static int oneme_login_input_toolbar = 2131363577;
+    public static int oneme_login_neuro_avatars_appbar = 2131363578;
+    public static int oneme_login_neuro_avatars_avatar = 2131363579;
+    public static int oneme_login_neuro_avatars_button_background = 2131363580;
+    public static int oneme_login_neuro_avatars_cancel_action = 2131363581;
+    public static int oneme_login_neuro_avatars_collapsible = 2131363582;
+    public static int oneme_login_neuro_avatars_continue_btn = 2131363583;
+    public static int oneme_login_neuro_avatars_description = 2131363584;
+    public static int oneme_login_neuro_avatars_load_from_gallery_action = 2131363585;
+    public static int oneme_login_neuro_avatars_recycler_view = 2131363586;
+    public static int oneme_login_neuro_avatars_remove_photo_action = 2131363587;
+    public static int oneme_login_neuro_avatars_root_container = 2131363588;
+    public static int oneme_login_neuro_avatars_tabs = 2131363589;
+    public static int oneme_login_neuro_avatars_tabs_shimmer = 2131363590;
+    public static int oneme_login_neuro_avatars_take_photo_action = 2131363591;
+    public static int oneme_login_neuro_avatars_title = 2131363592;
+    public static int oneme_login_neuro_avatars_toolbar = 2131363593;
+    public static int oneme_login_sms_code_exceeded_ok_btn = 2131363595;
+    public static int oneme_login_welcome_continue_btn = 2131363596;
+    public static int oneme_login_welcome_description = 2131363597;
+    public static int oneme_login_welcome_placeholder = 2131363598;
+    public static int oneme_login_welcome_switch_language_btn = 2131363599;
+    public static int oneme_login_welcome_terms = 2131363600;
+    public static int oneme_login_welcome_title = 2131363601;
+    public static int oneme_login_welcome_toolbar = 2131363602;
+}

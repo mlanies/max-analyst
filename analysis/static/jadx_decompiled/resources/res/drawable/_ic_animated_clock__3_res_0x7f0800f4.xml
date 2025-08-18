@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator
+        android:interpolator="@drawable/_ic_animated_clock__4_res_0x7f0800f5"
+        android:duration="12000"
+        android:startOffset="0"
+        android:repeatCount="infinite"
+        android:valueFrom="130320"
+        android:valueTo="133,557.2188"
+        android:valueType="floatType"
+        android:propertyName="rotation"/>
+</set>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator
+        android:interpolator="@drawable/_contacts__40_res_0x7f0800bb"
+        android:duration="250"
+        android:startOffset="0"
+        android:propertyName="translateXY"
+        android:pathData="M 16.56,19.5C 16.56,19.5 12.465,19.5 12.465,19.5"
+        android:propertyXName="translateX"
+        android:propertyYName="translateY"/>
+    <objectAnimator
+        android:interpolator="@drawable/_contacts__41_res_0x7f0800bc"
+        android:duration="217"
+        android:startOffset="250"
+        android:propertyName="translateXY"
+        android:pathData="M 12.465,19.5C 12.465,19.5 20.989,19.573 20.989,19.573"
+        android:propertyXName="translateX"
+        android:propertyYName="translateY"/>
+    <objectAnimator
+        android:interpolator="@drawable/_contacts__42_res_0x7f0800bd"
+        android:duration="417"
+        android:startOffset="467"
+        android:propertyName="translateXY"
+        android:pathData="M 20.989,19.573C 20.989,19.573 20.989,19.573 20.989,19.573"
+        android:propertyXName="translateX"
+        android:propertyYName="translateY"/>
+    <objectAnimator
+        android:interpolator="@drawable/_contacts__43_res_0x7f0800be"
+        android:duration="233"
+        android:startOffset="883"
+        android:propertyName="translateXY"
+        android:pathData="M 20.989,19.573C 20.989,19.573 16.56,19.5 16.56,19.5"
+        android:propertyXName="translateX"
+        android:propertyYName="translateY"/>
+</set>

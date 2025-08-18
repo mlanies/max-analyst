@@ -1,0 +1,50 @@
+package defpackage;
+
+/* loaded from: classes2.dex */
+public abstract class mda {
+    public static final int a = mwb.chat_screen_message_send_error_delete_action;
+    public static final int b = mwb.chat_screen_message_send_error_resend_action_multi;
+    public static final int c = mwb.chat_screen_message_send_error_resend_action_solo;
+    public static final int d = mwb.messages_list_chat_description_view_id;
+    public static final int e = mwb.messages_list_chat_description_view_type;
+    public static final int f = mwb.messages_list_confirm_cancel;
+    public static final int g = mwb.messages_list_confirm_complaint_extremism;
+    public static final int h = mwb.messages_list_confirm_complaint_fake;
+    public static final int i = mwb.messages_list_confirm_complaint_other;
+    public static final int j = mwb.messages_list_confirm_complaint_porno;
+    public static final int k = mwb.messages_list_confirm_complaint_spam;
+    public static final int l = mwb.messages_list_confirm_complaint_threat;
+    public static final int m = mwb.messages_list_confirm_delete;
+    public static final int n = mwb.messages_list_confirm_delete_for_all;
+    public static final int o = mwb.messages_list_confirm_pin_with_notify;
+    public static final int p = mwb.messages_list_confirm_pin_without_notify;
+    public static final int q = mwb.messages_list_context_action_copy;
+    public static final int r = mwb.messages_list_context_action_copy_photo;
+    public static final int s = mwb.messages_list_context_action_delete;
+    public static final int t = mwb.messages_list_context_action_delete_for_all;
+    public static final int u = mwb.messages_list_context_action_edit;
+    public static final int v = mwb.messages_list_context_action_forward;
+    public static final int w = mwb.messages_list_context_action_mark_as_unread;
+    public static final int x = mwb.messages_list_context_action_pin;
+    public static final int y = mwb.messages_list_context_action_reply;
+    public static final int z = mwb.messages_list_context_action_report;
+    public static final int A = mwb.messages_list_context_action_save_to_gallery;
+    public static final int B = mwb.messages_list_context_action_select;
+    public static final int C = mwb.messages_list_context_action_unpin;
+    public static final int D = mwb.messages_list_context_actions_view_type;
+    public static final int E = mwb.messages_list_context_content_container;
+    public static final int F = mwb.messages_list_context_member_view_type;
+    public static final int G = mwb.messages_list_context_members_member_cell;
+    public static final int H = mwb.messages_list_context_members_member_reaction;
+    public static final int I = mwb.messages_list_context_reactions_container;
+    public static final int J = mwb.messages_list_item_alias;
+    public static final int K = mwb.messages_list_item_date;
+    public static final int L = mwb.messages_list_item_keyboard_buttons;
+    public static final int M = mwb.messages_list_item_single_image;
+    public static final int N = mwb.messages_list_item_text;
+    public static final int O = mwb.messages_list_item_title;
+    public static final int P = mwb.messages_list_item_video_duration;
+    public static final int Q = mwb.messages_list_recycler_view;
+    public static final int R = mwb.messages_list_scroll_btn;
+    public static final int S = mwb.messages_list_share_contact_for_bot_action;
+}

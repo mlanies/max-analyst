@@ -1,0 +1,53 @@
+package defpackage;
+
+/* loaded from: classes.dex */
+public abstract class u8a {
+    public static final int a = k0c.chat_screen__cancel;
+    public static final int b = k0c.chat_screen__leave_chat_action;
+    public static final int c = k0c.chat_screen__leave_chat_title;
+    public static final int d = k0c.chat_screen__remove_chat_action;
+    public static final int e = k0c.chat_screen__remove_chat_title;
+    public static final int f = k0c.chat_screen__search_result_down_button_accessibility;
+    public static final int g = k0c.chat_screen__search_result_not_found;
+    public static final int h = k0c.chat_screen__search_result_success;
+    public static final int i = k0c.chat_screen__search_result_up_button_accessibility;
+    public static final int j = k0c.chat_screen__start_chat_with_bot;
+    public static final int k = k0c.chat_screen_channel_search_hint;
+    public static final int l = k0c.chat_screen_file_too_big_caption;
+    public static final int m = k0c.chat_screen_file_too_big_title;
+    public static final int n = k0c.chat_screen_join_channel;
+    public static final int o = k0c.chat_screen_join_chat;
+    public static final int p = k0c.chat_screen_leave_chat;
+    public static final int q = k0c.chat_screen_remove_chat;
+    public static final int r = k0c.chat_screen_search_hint;
+    public static final int s = k0c.chat_screen_status_mute_chat;
+    public static final int t = k0c.chat_screen_status_subscribe_chat;
+    public static final int u = k0c.chat_screen_status_unmute_chat;
+    public static final int v = k0c.chat_screen_unblock_contact;
+    public static final int w = k0c.media_bar_restricted_media_action;
+    public static final int x = k0c.media_bar_restricted_media_subtitle;
+    public static final int y = k0c.media_bar_restricted_media_title;
+    public static final int z = k0c.media_type_picker__close_dialog__accept;
+    public static final int A = k0c.media_type_picker__close_dialog__decline;
+    public static final int B = k0c.media_type_picker__close_dialog__title;
+    public static final int C = k0c.media_type_picker__contact;
+    public static final int D = k0c.media_type_picker__file;
+    public static final int E = k0c.media_type_picker__file_dialog__decline;
+    public static final int F = k0c.media_type_picker__file_dialog__from_file_manager;
+    public static final int G = k0c.media_type_picker__file_dialog__from_gallery;
+    public static final int H = k0c.media_type_picker__file_dialog__title;
+    public static final int I = k0c.media_type_picker__gallery;
+    public static final int J = k0c.media_type_picker__input_hint;
+    public static final int K = k0c.media_type_picker__money;
+    public static final int L = k0c.media_type_picker__permissions_dialog__button;
+    public static final int M = k0c.media_type_picker__permissions_dialog__camera_permission;
+    public static final int N = k0c.media_type_picker__permissions_dialog__gallery_camera_subtitle;
+    public static final int O = k0c.media_type_picker__permissions_dialog__gallery_camera_title;
+    public static final int P = k0c.media_type_picker__permissions_dialog__gallery_subtitle;
+    public static final int Q = k0c.media_type_picker__permissions_dialog__gallery_title;
+    public static final int R = k0c.media_type_picker__permissions_dialog__subtitle;
+    public static final int S = k0c.media_type_picker__permissions_dialog__title;
+    public static final int T = k0c.media_type_picker__place;
+    public static final int U = k0c.media_type_picker__snack_file;
+    public static final int V = k0c.media_type_picker__snack_media;
+}

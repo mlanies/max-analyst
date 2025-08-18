@@ -1,0 +1,56 @@
+package defpackage;
+
+/* loaded from: classes.dex */
+public abstract class r8a {
+    public static final int a = j0c.cancel;
+    public static final int b = j0c.channel_close_title;
+    public static final int c = j0c.channel_delete_for_all;
+    public static final int d = j0c.channel_delete_title;
+    public static final int e = j0c.channel_leave_title;
+    public static final int f = j0c.channel_move_rights_and_leave;
+    public static final int g = j0c.chat_clear_history_snackbar_title;
+    public static final int h = j0c.chat_delete_confirm;
+    public static final int i = j0c.chat_delete_for_all;
+    public static final int j = j0c.chat_delete_for_all_title;
+    public static final int k = j0c.chat_delete_for_both;
+    public static final int l = j0c.chat_delete_for_self;
+    public static final int m = j0c.chat_delete_title;
+    public static final int n = j0c.chat_leave_cancel;
+    public static final int o = j0c.chat_leave_title;
+    public static final int p = j0c.chat_list_toolbar_title;
+    public static final int q = j0c.chat_list_toolbar_transition_name;
+    public static final int r = j0c.chat_move_rights_and_leave;
+    public static final int s = j0c.chat_suspend_and_delete_bot_snackbar_title;
+    public static final int t = j0c.chat_suspend_bot_snackbar_title;
+    public static final int u = j0c.chats_list_search_clear_recent_dialog_cancel_text;
+    public static final int v = j0c.chats_list_search_clear_recent_dialog_confirm_text;
+    public static final int w = j0c.chats_list_search_clear_recent_dialog_title;
+    public static final int x = j0c.chats_list_search_contacts_header;
+    public static final int y = j0c.chats_list_search_hint;
+    public static final int z = j0c.chats_list_search_messages_header;
+    public static final int A = j0c.confirmation_block;
+    public static final int B = j0c.confirmation_close_channel;
+    public static final int C = j0c.confirmation_leave_channel;
+    public static final int D = j0c.confirmation_leave_chat;
+    public static final int E = j0c.contact_block_title;
+    public static final int F = j0c.contact_blocked_snackbar_title;
+    public static final int G = j0c.contact_empty_last_seen;
+    public static final int H = j0c.contacts_picker_search_hint;
+    public static final int I = j0c.contacts_picker_send_btn_title;
+    public static final int J = j0c.contacts_picker_toolbar_title;
+    public static final int K = j0c.dialog_delete_title;
+    public static final int L = j0c.notifications_1_day;
+    public static final int M = j0c.notifications_1_hour;
+    public static final int N = j0c.notifications_4_hour;
+    public static final int O = j0c.notifications_disable;
+    public static final int P = j0c.notifications_infinite;
+    public static final int Q = j0c.picker_chats_add_button;
+    public static final int R = j0c.picker_chats_forward_from_self;
+    public static final int S = j0c.picker_chats_forward_from_somebody;
+    public static final int T = j0c.picker_chats_forward_quote_title;
+    public static final int U = j0c.picker_chats_forward_title;
+    public static final int V = j0c.picker_chats_list_share_contact;
+    public static final int W = j0c.picker_chats_list_share_link;
+    public static final int X = j0c.picker_chats_search_hint;
+    public static final int Y = j0c.picker_chats_toolbar_title;
+}

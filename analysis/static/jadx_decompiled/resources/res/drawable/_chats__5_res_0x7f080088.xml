@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator
+        android:interpolator="@drawable/_chats__6_res_0x7f080093"
+        android:duration="167"
+        android:startOffset="0"
+        android:propertyName="translateXY"
+        android:pathData="M 14.883,34.117C 14.883,34.117 15.012,36.126 15.012,36.126"
+        android:propertyXName="translateX"
+        android:propertyYName="translateY"/>
+    <objectAnimator
+        android:interpolator="@drawable/_chats__7_res_0x7f080095"
+        android:duration="200"
+        android:startOffset="167"
+        android:propertyName="translateXY"
+        android:pathData="M 15.012,36.126C 15.012,36.126 15.012,34.7 15.012,34.7"
+        android:propertyXName="translateX"
+        android:propertyYName="translateY"/>
+    <objectAnimator
+        android:interpolator="@drawable/_chats__8_res_0x7f080096"
+        android:duration="133"
+        android:startOffset="367"
+        android:propertyName="translateXY"
+        android:pathData="M 15.012,34.7C 15.012,34.7 15.34,33.957 15.34,33.957"
+        android:propertyXName="translateX"
+        android:propertyYName="translateY"/>
+    <objectAnimator
+        android:interpolator="@drawable/_chats__9_res_0x7f080097"
+        android:duration="333"
+        android:startOffset="500"
+        android:propertyName="translateXY"
+        android:pathData="M 15.34,33.957C 15.34,33.957 14.883,34.117 14.883,34.117"
+        android:propertyXName="translateX"
+        android:propertyYName="translateY"/>
+</set>

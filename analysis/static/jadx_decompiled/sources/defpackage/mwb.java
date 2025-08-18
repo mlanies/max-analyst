@@ -1,0 +1,57 @@
+package defpackage;
+
+/* loaded from: classes2.dex */
+public abstract class mwb {
+    public static int chat_screen_message_send_error_delete_action = 2131362425;
+    public static int chat_screen_message_send_error_resend_action_multi = 2131362426;
+    public static int chat_screen_message_send_error_resend_action_solo = 2131362427;
+    public static int messages_contact_attach_chat_action = 2131363169;
+    public static int messages_contact_attach_profile_action = 2131363170;
+    public static int messages_list_chat_description_view_id = 2131363171;
+    public static int messages_list_chat_description_view_type = 2131363172;
+    public static int messages_list_confirm_cancel = 2131363173;
+    public static int messages_list_confirm_complaint_extremism = 2131363174;
+    public static int messages_list_confirm_complaint_fake = 2131363175;
+    public static int messages_list_confirm_complaint_other = 2131363176;
+    public static int messages_list_confirm_complaint_porno = 2131363177;
+    public static int messages_list_confirm_complaint_spam = 2131363178;
+    public static int messages_list_confirm_complaint_threat = 2131363179;
+    public static int messages_list_confirm_delete = 2131363180;
+    public static int messages_list_confirm_delete_for_all = 2131363181;
+    public static int messages_list_confirm_pin_with_notify = 2131363182;
+    public static int messages_list_confirm_pin_without_notify = 2131363183;
+    public static int messages_list_context_action_copy = 2131363184;
+    public static int messages_list_context_action_copy_photo = 2131363185;
+    public static int messages_list_context_action_delete = 2131363186;
+    public static int messages_list_context_action_delete_for_all = 2131363187;
+    public static int messages_list_context_action_edit = 2131363188;
+    public static int messages_list_context_action_forward = 2131363189;
+    public static int messages_list_context_action_mark_as_unread = 2131363190;
+    public static int messages_list_context_action_pin = 2131363191;
+    public static int messages_list_context_action_reply = 2131363192;
+    public static int messages_list_context_action_report = 2131363193;
+    public static int messages_list_context_action_save_to_gallery = 2131363194;
+    public static int messages_list_context_action_select = 2131363195;
+    public static int messages_list_context_action_share_externally = 2131363196;
+    public static int messages_list_context_action_unpin = 2131363197;
+    public static int messages_list_context_actions_view_type = 2131363198;
+    public static int messages_list_context_content_container = 2131363199;
+    public static int messages_list_context_member_view_type = 2131363200;
+    public static int messages_list_context_members_member_cell = 2131363201;
+    public static int messages_list_context_members_member_reaction = 2131363202;
+    public static int messages_list_context_reactions_container = 2131363203;
+    public static int messages_list_item_alias = 2131363204;
+    public static int messages_list_item_date = 2131363205;
+    public static int messages_list_item_keyboard_buttons = 2131363206;
+    public static int messages_list_item_single_image = 2131363207;
+    public static int messages_list_item_text = 2131363208;
+    public static int messages_list_item_title = 2131363209;
+    public static int messages_list_item_video_duration = 2131363210;
+    public static int messages_list_reactions_badge = 2131363211;
+    public static int messages_list_recycler_view = 2131363212;
+    public static int messages_list_scroll_btn = 2131363213;
+    public static int messages_list_share_contact_for_bot_action = 2131363214;
+    public static int messages_list_vh_message_subtitle = 2131363215;
+    public static int messages_list_vh_message_title = 2131363216;
+    public static int messages_share_attach_open_url_action = 2131363217;
+}

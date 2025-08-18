@@ -1,0 +1,55 @@
+package defpackage;
+
+/* loaded from: classes2.dex */
+public abstract class wfa {
+    public static final int a = lsb.chat_common_background_fileType_archiveBadge;
+    public static final int b = lsb.chat_common_background_fileType_archiveBkg;
+    public static final int c = lsb.chat_common_background_fileType_archiveElement;
+    public static final int d = lsb.chat_common_background_fileType_archiveIcon;
+    public static final int e = lsb.chat_common_background_fileType_dataBadge;
+    public static final int f = lsb.chat_common_background_fileType_dataBkg;
+    public static final int g = lsb.chat_common_background_fileType_dataElement;
+    public static final int h = lsb.chat_common_background_fileType_dataIcon;
+    public static final int i = lsb.chat_common_background_fileType_imageBadge;
+    public static final int j = lsb.chat_common_background_fileType_imageBkg;
+    public static final int k = lsb.chat_common_background_fileType_imageElement;
+    public static final int l = lsb.chat_common_background_fileType_imageIcon;
+    public static final int m = lsb.chat_common_background_fileType_musicBadge;
+    public static final int n = lsb.chat_common_background_fileType_musicBkg;
+    public static final int o = lsb.chat_common_background_fileType_musicElement;
+    public static final int p = lsb.chat_common_background_fileType_musicIcon;
+    public static final int q = lsb.chat_common_background_fileType_presentationBadge;
+    public static final int r = lsb.chat_common_background_fileType_presentationBkg;
+    public static final int s = lsb.chat_common_background_fileType_presentationElement;
+    public static final int t = lsb.chat_common_background_fileType_presentationIcon;
+    public static final int u = lsb.chat_common_background_fileType_programBadge;
+    public static final int v = lsb.chat_common_background_fileType_programBkg;
+    public static final int w = lsb.chat_common_background_fileType_programElement;
+    public static final int x = lsb.chat_common_background_fileType_programIcon;
+    public static final int y = lsb.chat_common_background_fileType_textBadge;
+    public static final int z = lsb.chat_common_background_fileType_textBkg;
+    public static final int A = lsb.chat_common_background_fileType_textElement;
+    public static final int B = lsb.chat_common_background_fileType_textIcon;
+    public static final int C = lsb.chat_common_background_fileType_unknownBadge;
+    public static final int D = lsb.chat_common_background_fileType_unknownBkg;
+    public static final int E = lsb.chat_common_background_fileType_unknownElement;
+    public static final int F = lsb.chat_common_background_fileType_unknownIcon;
+    public static final int G = lsb.chat_common_background_fileType_videoBadge;
+    public static final int H = lsb.chat_common_background_fileType_videoBkg;
+    public static final int I = lsb.chat_common_background_fileType_videoElement;
+    public static final int J = lsb.chat_common_background_fileType_videoIcon;
+    public static final int K = lsb.chat_common_text_fileType;
+    public static final int L = lsb.global_background_accent_neutralFade;
+    public static final int M = lsb.global_background_accent_neutralFadeSecondary;
+    public static final int N = lsb.global_background_surfaceCard;
+    public static final int O = lsb.global_icon_contrastStatic;
+    public static final int P = lsb.global_icon_negative;
+    public static final int Q = lsb.global_icon_primary;
+    public static final int R = lsb.global_icon_tertiary;
+    public static final int S = lsb.global_icon_themed;
+    public static final int T = lsb.global_states_text_disabled_primary;
+    public static final int U = lsb.global_text_negative;
+    public static final int V = lsb.global_text_positive;
+    public static final int W = lsb.global_text_primary;
+    public static final int X = lsb.global_text_secondary;
+}

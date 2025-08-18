@@ -1,0 +1,53 @@
+package defpackage;
+
+/* loaded from: classes2.dex */
+public abstract class b2c {
+    public static int app_gost_host_1 = 2131951714;
+    public static int app_gost_host_2 = 2131951715;
+    public static int app_gost_host_3 = 2131951716;
+    public static int app_gost_host_4 = 2131951717;
+    public static int app_host = 2131951718;
+    public static int app_host_1 = 2131951719;
+    public static int app_host_2 = 2131951720;
+    public static int app_host_3 = 2131951721;
+    public static int app_host_prod = 2131951722;
+    public static int app_host_prod_port = 2131951723;
+    public static int app_id = 2131951724;
+    public static int app_scheme = 2131951727;
+    public static int bot_start_command = 2131951813;
+    public static int build_at = 2131951823;
+    public static int channel_hint = 2131952301;
+    public static int chat_hint = 2131952386;
+    public static int dev_prefs__server_address_value_api_oneme = 2131952702;
+    public static int dev_prefs__server_address_value_api_test_oneme = 2131952703;
+    public static int duration_00 = 2131952748;
+    public static int feedback_pick_chat_dev = 2131952860;
+    public static int folder_path = 2131952931;
+    public static int git_branch = 2131953008;
+    public static int git_last_commit_hash = 2131953009;
+    public static int hello_blank_fragment = 2131953024;
+    public static int hour_format_12 = 2131953026;
+    public static int hour_format_24 = 2131953027;
+    public static int link_call_join_path = 2131953054;
+    public static int link_chat_join_path = 2131953055;
+    public static int link_chat_path = 2131953056;
+    public static int link_host_api = 2131953064;
+    public static int link_private_channel_path = 2131953070;
+    public static int link_private_contact_path = 2131953071;
+    public static int link_startwebapp_path = 2131953074;
+    public static int link_stickerset_path = 2131953075;
+    public static int menu_check_for_updates = 2131953276;
+    public static int menu_dev_logs = 2131953282;
+    public static int menu_dev_settings = 2131953283;
+    public static int menu_share_logs = 2131953295;
+    public static int notification_new_beta_app = 2131953493;
+    public static int privacy_policy_link_en = 2131954339;
+    public static int privacy_policy_link_ru = 2131954340;
+    public static int profile_hint = 2131954525;
+    public static int request_storage_permissions_beta = 2131954684;
+    public static int shortcut_id_create_chat = 2131954804;
+    public static int shortcut_id_open_chat = 2131954805;
+    public static int tam_playback_speed_action_name = 2131954852;
+    public static int tamtam = 2131954853;
+    public static int web_scheme = 2131955182;
+}

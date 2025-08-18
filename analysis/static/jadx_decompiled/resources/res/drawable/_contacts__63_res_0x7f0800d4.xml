@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator
+        android:interpolator="@drawable/_contacts__64_res_0x7f0800d5"
+        android:duration="250"
+        android:startOffset="0"
+        android:valueFrom="0"
+        android:valueTo="-6"
+        android:valueType="floatType"
+        android:propertyName="rotation"/>
+    <objectAnimator
+        android:interpolator="@drawable/_contacts__65_res_0x7f0800d6"
+        android:duration="383"
+        android:startOffset="250"
+        android:valueFrom="-6"
+        android:valueTo="15"
+        android:valueType="floatType"
+        android:propertyName="rotation"/>
+    <objectAnimator
+        android:interpolator="@drawable/_contacts__66_res_0x7f0800d7"
+        android:duration="483"
+        android:startOffset="633"
+        android:valueFrom="15"
+        android:valueTo="0"
+        android:valueType="floatType"
+        android:propertyName="rotation"/>
+</set>
