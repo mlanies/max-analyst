@@ -4,9 +4,7 @@
 
 ## Превью
 
-<a href="video/max-analyst.mp4">
-  <img src="video/pic.png" alt="MAX Analyst Demo" width="600" height="400" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-</a>
+[![MAX Analyst Demo](video/pic.png)](video/max-analyst.mp4)
 
 *Нажмите на изображение для просмотра демонстрации системы*
 
@@ -120,7 +118,6 @@ curl -s http://localhost:5003/api/suspicious-actions | jq .summary
 
 ## Полезные материалы
 
-- ТЗ по улучшению UI: `analysis/docs/DEVELOPER_TASK_UI_IMPROVEMENTS.md`
 - Основной API: `analysis/backend/api/simple_api.py`
 - Веб‑интерфейс: `analysis/web/index.html`, модальные окна — `analysis/web/modal.html`
 
