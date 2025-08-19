@@ -14,11 +14,25 @@ export PATH=$PATH:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools
 
 # Load shared utilities
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-if [ -f "$SCRIPT_DIR/scripts/common.sh" ]; then
+SCRIPTS_DIR="$SCRIPT_DIR/scripts"
+if [ -f "$SCRIPTS_DIR/config.sh" ]; then
     # shellcheck disable=SC1091
-    . "$SCRIPT_DIR/scripts/common.sh"
+    . "$SCRIPTS_DIR/config.sh"
+fi
+if [ -f "$SCRIPTS_DIR/logger.sh" ]; then
+    # shellcheck disable=SC1091
+    . "$SCRIPTS_DIR/logger.sh"
+fi
+if [ -f "$SCRIPTS_DIR/common.sh" ]; then
+    # shellcheck disable=SC1091
+    . "$SCRIPTS_DIR/common.sh"
 else
-    echo "[ERROR] common utilities not found at $SCRIPT_DIR/scripts/common.sh" >&2
+    echo "[ERROR] Common utilities not found at $SCRIPTS_DIR/common.sh"
+    echo "Current directory: $(pwd)"
+    echo "Script directory: $SCRIPT_DIR"
+    echo "Scripts directory: $SCRIPTS_DIR"
+    echo "Looking for: $SCRIPTS_DIR/common.sh"
+    ls -la "$SCRIPTS_DIR/" 2>/dev/null || echo "Scripts directory not found"
     exit 1
 fi
 

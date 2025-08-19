@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suspicious Activity Monitor - MAX Analyst</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+    <!-- Подключение сервисов -->
+    <script src="js/services/api-service.js"></script>
+    <script src="js/services/suspicious-activity-service.js"></script>
+    <script src="js/services/security-analysis-service.js"></script>
+    <script src="js/components/suspicious-activity-dashboard.js"></script>
+    <script src="js/components/suspicious-activity-modal.js"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/suspicious-activity.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Suspicious Activity Monitor</h1>
+            <p>Real-time monitoring of suspicious activities in MAX Messenger</p>
+            <div class="header-actions">
+                <button class="btn btn-secondary" onclick="window.location.href='index.html'">Back to Dashboard</button>
+                <button class="btn btn-success" onclick="exportAllData()">Export All Data</button>
+            </div>
+        </div>
+
+        <!-- Error container -->
+        <div id="error-container"></div>
+
+        <!-- Filters -->
+        <div class="filters-section">
+            <div class="filters">
+                <div class="filter-group">
+                    <label>Time Filter:</label>
+                    <select id="time-filter" onchange="applyTimeFilter()">
+                        <option value="all">All Time</option>
+                        <option value="today">Today</option>
+                        <option value="week">This Week</option>
+                        <option value="month">This Month</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label>Risk Level:</label>
+                    <select id="risk-filter" onchange="applyRiskFilter()">
+                        <option value="all">All Levels</option>
+                        <option value="high">High Risk</option>
+                        <option value="medium">Medium Risk</option>
+                        <option value="low">Low Risk</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label>Category:</label>
+                    <select id="category-filter" onchange="applyCategoryFilter()">
+                        <option value="all">All Categories</option>
+                        <option value="network_spying">Network Spying</option>
+                        <option value="file_access">File Access</option>
+                        <option value="camera_access">Camera Access</option>
+                        <option value="location_tracking">Location Tracking</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <button class="btn btn-secondary" onclick="clearAllFilters()">Clear Filters</button>
+                    <button class="btn btn-primary" onclick="refreshData()">Refresh</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Summary Cards -->
+        <div class="summary-section">
+            <div id="suspicious-summary" class="summary-cards">
+                <!-- Summary cards will be rendered here -->
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content-grid">
+            <!-- Activity Timeline -->
+            <div class="card timeline-card">
+                <div id="activity-timeline">
+                    <!-- Timeline will be rendered here -->
+                </div>
+            </div>
+
+            <!-- Recent Events -->
+            <div class="card events-card">
+                <div id="recent-events">
+                    <!-- Recent events will be rendered here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Export Options -->
+        <div class="export-section">
+            <div class="export-controls">
+                <div class="export-group">
+                    <label>Export Format:</label>
+                    <select id="export-format">
+                        <option value="json">JSON</option>
+                        <option value="csv">CSV</option>
+                    </select>
+                </div>
+                <button class="btn btn-success" id="export-suspicious-data" onclick="exportData()">
+                    Export Data
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Suspicious Activity Modal -->
+    <div id="suspicious-activity-modal" class="modal">
+        <!-- Modal content will be dynamically generated -->
+    </div>
+
+    <script>
+        // Global variables
+        let suspiciousDashboard;
+        let suspiciousActivityModal;
+
+        // Initialize components when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeComponents();
+        });
+
+        function initializeComponents() {
+            try {
+                suspiciousDashboard = new SuspiciousActivityDashboard();
+                suspiciousActivityModal = new SuspiciousActivityModal();
+                
+                // Make components globally accessible
+                window.suspiciousDashboard = suspiciousDashboard;
+                window.suspiciousActivityModal = suspiciousActivityModal;
+                
+                console.log('Suspicious activity components initialized');
+            } catch (error) {
+                console.error('Error initializing components:', error);
+                showError('Failed to initialize components');
+            }
+        }
+
+        function applyTimeFilter() {
+            const filter = document.getElementById('time-filter').value;
+            if (suspiciousDashboard) {
+                suspiciousDashboard.applyFilter(filter);
+            }
+        }
+
+        function applyRiskFilter() {
+            const filter = document.getElementById('risk-filter').value;
+            // Implement risk filtering logic
+            console.log('Applying risk filter:', filter);
+        }
+
+        function applyCategoryFilter() {
+            const filter = document.getElementById('category-filter').value;
+            // Implement category filtering logic
+            console.log('Applying category filter:', filter);
+        }
+
+        function clearAllFilters() {
+            document.getElementById('time-filter').value = 'all';
+            document.getElementById('risk-filter').value = 'all';
+            document.getElementById('category-filter').value = 'all';
+            
+            if (suspiciousDashboard) {
+                suspiciousDashboard.applyFilter('all');
+            }
+        }
+
+        function refreshData() {
+            if (suspiciousDashboard) {
+                suspiciousDashboard.loadData().then(() => {
+                    suspiciousDashboard.renderDashboard();
+                });
+            }
+        }
+
+        function exportData() {
+            if (suspiciousDashboard) {
+                suspiciousDashboard.exportData();
+            }
+        }
+
+        function exportAllData() {
+            const format = document.getElementById('export-format').value;
+            if (suspiciousDashboard) {
+                suspiciousDashboard.exportData(format);
+            }
+        }
+
+        function showError(message) {
+            const errorContainer = document.getElementById('error-container');
+            if (errorContainer) {
+                errorContainer.innerHTML = `
+                    <div class="alert alert-error">
+                        <strong>Error:</strong> ${message}
+                    </div>
+                `;
+                setTimeout(() => {
+                    errorContainer.innerHTML = '';
+                }, 5000);
+            }
+        }
+
+        // Cleanup on page unload
+        window.addEventListener('beforeunload', function() {
+            if (suspiciousDashboard) {
+                suspiciousDashboard.destroy();
+            }
+        });
+    </script>
+</body>
+</html>
