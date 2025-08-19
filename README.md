@@ -4,9 +4,11 @@
 
 ## Превью
 
-[![MAX Analyst Demo](video/max-analyst.mp4)](video/max-analyst.mp4)
+<a href="video/max-analyst.mp4">
+  <img src="video/pic.png" alt="MAX Analyst Demo" width="600" height="400" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+</a>
 
-*Нажмите на видео для просмотра демонстрации системы*
+*Нажмите на изображение для просмотра демонстрации системы*
 
 ## Что умеет проект
 
